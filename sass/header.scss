@@ -1,0 +1,33 @@
+.header {
+    height:7em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-left-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    h1 {
+        font-weight: 300;
+        margin-bottom: 0.15em;
+    }
+    h3, h4 {
+        font-weight: bold;
+    }
+}
+
+.header-right-box { 
+    width: 50%; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    img{
+        width: 1.5em;  
+        height: 1.5em;
+        margin-left: 1em;
+    }
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+    include includes/head.pug
+    title My personal site
+    body
+        include includes/header.pug
+        main.wrapper
+            .content
+                .content-block
+                    a(href="./cv.html")
+                        img(src="../../img/cv.jpg" alt="CV") 
+                .content-block 
+                    a(href="./portfolio.html")
+                        img(src="../../img/portfolio.jpg" alt="Portfolio")
+                .content-block
+                    a(href="./contact.html")
+                        img(src="../../img/contact.jpg" alt="Contacts")
+    include includes/footer.pug
+

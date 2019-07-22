@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+html(lang="en")
+    include includes/head.pug
+        title My contacts
+    body
+        include includes/header.pug
+        main.wrapper
+            .content
+                .content-block
+                    a(href="./index.html")
+                        img(src="../../img/portfolio.jpg" alt="portfolio")
+                .content-info-block 
+                    a(href="./index.html")
+                        img(src="../../img/short_line_aqua.jpg" alt="")
+                    h2 My skills
+
+                    .skillbar(data-percent="80%")
+                        .skill-name
+                            span 80%
+                        .skillbar-bar
+                        .skillbar-bar-percent English
+                    .skillbar(data-percent="70%")
+                        .skill-name
+                            span 70%
+                        .skillbar-bar
+                        .skillbar-bar-percent Photoshop & Illustrator
+                    .skillbar(data-percent="60%")
+                        .skill-name
+                            span 60%
+                        .skillbar-bar
+                        .skillbar-bar-percent HTML & CSS
+                    .skillbar(data-percent="20%")
+                        .skill-name
+                            span 20%
+                        .skillbar-bar
+                        .skillbar-bar-percent Java Script   
+                    .skillbar(data-percent="10%")
+                        .skill-name
+                            span 10%
+                        .skillbar-bar
+                        .skillbar-bar-percent React/Redux                     
+                    
+                    .portfolio
+                        h2.content-info-block-title My portfolio
+                        .gallery
+                            img.gallery-img#myImg1(src="../../img/gallery1.jpg" width="300" height="200")
+                            #myModal1.modal
+                                span#x1.close ×
+                                img.modal-content#img01
+                            img.gallery-img#myImg2(src="../../img/gallery4.jpg" width="300" height="200")
+                            #myModal2.modal
+                                    span#x2.close ×
+                                    img.modal-content#img02                                
+                            img.gallery-img#myImg3(src="../../img/gallery6.jpg" width="300" height="200")
+                            #myModal3.modal
+                                    span#x3.close ×
+                                    img.modal-content#img03
+
+    include includes/footer.pug
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="../../js/skillbar.js")
+    script(src="../../js/modal.js")

@@ -1,0 +1,195 @@
+.content {
+    height: 100%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-block {
+    width: 30%;
+    img{
+        box-shadow: $boxshadow;
+    }
+}
+
+.content-block:hover {
+    opacity: .7;
+}
+
+.content-info-block {
+    width: 70%;
+    padding: 0 1.5em;
+    h2 {
+        margin-top: 0.3em;
+        text-align: center;
+    }
+    .content-info-block_year {
+        margin-top: 0.6em;
+        font-weight: bold;
+    }
+    .content-info-block_speciality {
+        font-style: italic;
+    }
+}
+
+.skillbar {
+    position: relative;
+    display: block;
+    margin: 1em;
+    width: 100%;
+    background: $bgrsecondary;
+    height: 1.5em;
+    border-radius: 0.3em;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+.skill-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    background: $bgrsecondary;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.skill-name span{
+    display: block;
+    background: $bgrskills;
+    padding: 0 10px;
+    height: 20px;
+    line-height: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.skillbar-bar {
+    height: 20px;
+    width: 0;
+    background: $bgrskills;
+    border-radius: 5px;
+}
+
+.skillbar-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 20px;
+    line-height: 20px;
+    color: $textlight;
+}
+
+.portfolio {
+    margin-top: 1em;
+}
+
+.gallery {
+    margin-top: 1em;
+    padding: 0;
+    width: 600px;
+    height: 120px;
+}
+
+.gallery-img {
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    height: 130px;
+    margin-left: 10px;
+/*    border: 1px solid blue;*/
+}
+
+#myImg1, #myImg2, #myImg3 {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg1, #myImg2, #myImg3:hover {opacity: 0.7;}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 90%;
+    }
+}
+
+.content-info-block_contact-form {
+    padding-top: 10px;
+    input {
+        width: 100%;    
+        height: 2.5em;
+        margin-bottom: 0.7em;
+        padding: 0 0.5em;
+        border: $border;
+        border-radius: 0.5em;
+    }
+    textarea {
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+        border: $border;
+        border-radius: 0.5em;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: $bgrcontact;
+        color: $textlight;
+        border: none;
+        font-size: 1.3em;
+        box-shadow: $boxshadow;
+    }
+}

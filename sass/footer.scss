@@ -1,0 +1,25 @@
+.footer-content {
+    display: flex;
+    font-display: row;
+    justify-content: space-between;
+    margin-top: 0.5em;
+}
+
+.footer-content_copyright {
+    font-size: 1em;
+}
+
+.footer-content_contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img{
+        width: 1.5em;  
+        height: 1.5em;
+        margin-left: 1em;
+        margin-top: -0.3em;
+    }
+    span {
+        margin-left: 0.3em;
+    }
+}

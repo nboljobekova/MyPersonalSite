@@ -1,0 +1,22 @@
+.btn-block {
+    display: inline-flex;
+    .btn {
+        border-radius: 3px;
+        font-size: 1rem;
+        cursor: pointer;
+        display: inline-block;
+        padding: .7em 2.3em;
+        text-align: center;    
+        position: relative;
+        background-color: $lgrey;
+        margin-right: 20px;
+    }
+    & :hover {
+        background-color: $green;
+        color: $white;
+    }
+    & :active {
+        background-color: $green;
+        color: $white;
+    }
+}
